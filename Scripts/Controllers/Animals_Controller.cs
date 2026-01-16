@@ -9,6 +9,7 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 // Game Dependencies
+using Atbt.Core;
 
 namespace Atbt.Controllers {
 public class Animals_Controller : Singleton<Animals_Controller> {
