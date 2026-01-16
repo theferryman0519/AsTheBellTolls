@@ -9,6 +9,7 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 // Game Dependencies
+using Atbt.Core;
 
 namespace Atbt.Controllers {
 public class Admin_Controller : Singleton<Admin_Controller> {
