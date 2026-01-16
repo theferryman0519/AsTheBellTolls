@@ -9,6 +9,7 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 // Game Dependencies
+using Atbt.Core;
 
 namespace Atbt.Controllers {
 public class Atmosphere_Controller : Singleton<Atmosphere_Controller> {
