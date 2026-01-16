@@ -48,7 +48,6 @@ using UnityEngine.SceneManagement;
 // using Atbt.Schedule;
 // using Atbt.Settings;
 // using Atbt.Shops;
-// using Atbt.TimeEffect;
 // using Atbt.TimeManipulation;
 // using Atbt.TownRanking;
 // using Atbt.Ui;
