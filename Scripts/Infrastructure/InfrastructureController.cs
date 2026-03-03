@@ -17,6 +17,7 @@ public class InfrastructureController : Singleton<InfrastructureController> {
 #region -------------------- Serialized Variables --------------------
     [Header("Sub Controllers")]
     [SerializeField] private AdminSubController _adminSubController;
+    [SerializeField] private ConstantsSubController _constantsSubController;
     [SerializeField] private CoreSubController _coreSubController;
     [SerializeField] private EventsSubController _eventsSubController;
     [SerializeField] private GameTimeSubController _gameTimeSubController;
@@ -26,6 +27,7 @@ public class InfrastructureController : Singleton<InfrastructureController> {
 #endregion
 #region -------------------- Public Variables --------------------
     public AdminSubController Admin => _adminSubController;
+    public ConstantsSubController Constants => _constantsSubController;
     public CoreSubController Core => _coreSubController;
     public EventsSubController Events => _eventsSubController;
     public GameTimeSubController GameTime => _gameTimeSubController;
@@ -57,6 +59,7 @@ public class InfrastructureController : Singleton<InfrastructureController> {
         WriteLog(this.GetType().Name, $"Initializing the controller.");
 
         _adminSubController.Initialize();
+        _constantsSubController.Initialize();
         _coreSubController.Initialize();
         _eventsSubController.Initialize();
         _gameTimeSubController.Initialize();
